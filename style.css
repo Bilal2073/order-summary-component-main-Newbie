@@ -1,0 +1,243 @@
+        /* text-align: center;
+        justify-content: center;
+        align-content: center;
+        align-items: center; */
+
+        @viewport {
+            width: device-width;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; */
+        }
+
+        @media only screen and (max-width: 1440px) {
+            body {
+                background-image: url(images/pattern-background-desktop.svg);
+                background-repeat: no-repeat;
+                font-family: 'Red Hat Display';
+                /* color: hsl(225, 100%, 94%);
+        color: hsl(245, 75%, 52%);
+        color: hsl(225, 100%, 98%);
+        color: hsl(224, 23%, 55%);
+        color: hsl(223, 47%, 23%); */
+                background-color: hsl(225, 100%, 94%);
+            }
+            .container {
+                /* border: 3px red solid; */
+                border-radius: 10px;
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                overflow: hidden;
+                margin: 3px 500px;
+                /* flex-direction: column; */
+            }
+            .image {
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+            }
+            .img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+            }
+            .textData {
+                background-color: hsl(0, 0%, 100%);
+                text-align: center;
+                padding: 40px 30px;
+            }
+            h1 {
+                padding-bottom: 15px;
+                color: hsl(223, 47%, 23%);
+            }
+            p {
+                font-size: 16px;
+                /* filter: brightness(80%); */
+                color: hsl(224, 23%, 55%);
+                line-height: 1.7em;
+            }
+            .imagePlan {
+                display: flex;
+                background-color: hsl(225, 100%, 98%);
+                /* border: 3px red solid; */
+                border-radius: 10px;
+                overflow: hidden;
+                margin: 20px 0px;
+                padding: 20px 0px;
+                /* justify-content: center; */
+            }
+            .iconMusic {
+                padding: 0px 20px;
+            }
+            .annualyear {
+                margin-top: 3px;
+                display: flex;
+                flex-direction: column;
+            }
+            .annual {
+                color: hsl(223, 47%, 23%);
+                font-weight: bold;
+            }
+            .year {
+                color: rgba(0, 0, 0, 0.5);
+            }
+            .change {
+                /* border: 4px red solid; */
+                margin-left: 90px;
+                margin-top: 13px;
+            }
+            .change a:hover {
+                text-decoration: none;
+                color: hsl(223, 76%, 68%);
+            }
+            .payment {
+                font-size: 15px;
+                font-weight: bold;
+                margin: 30px 0px;
+            }
+            .payment a {
+                display: block;
+                width: 350px;
+                height: 30px;
+                border-radius: 10px;
+                background-color: hsl(245, 75%, 52%);
+                /* text-align: center; */
+                padding-top: 13px;
+                box-shadow: 0px 20px 20px rgba(4, 0, 255, 0.2);
+                color: hsl(0, 0%, 100%);
+                text-decoration: none;
+            }
+            .payment a:hover {
+                background-color: hsl(240, 73%, 71%);
+            }
+            .cancel a {
+                color: rgba(0, 0, 0, 0.4);
+                font-weight: bold;
+                text-decoration: none;
+            }
+            .cancel a:hover {
+                text-decoration: none;
+                color: hsl(0, 0%, 0%);
+            }
+        }
+
+        @media only screen and (max-width: 375px) {
+            body {
+                background-image: url(images/pattern-background-mobile.svg);
+                background-repeat: no-repeat;
+                font-family: 'Red Hat Display';
+                background-color: hsl(225, 100%, 94%);
+            }
+            .container {
+                /* border: 3px red solid; */
+                border-radius: 20px;
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                overflow: hidden;
+                margin: 10px 20px;
+                /* flex-direction: column; */
+            }
+            .image {
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+            }
+            .img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+            }
+            .textData {
+                background-color: hsl(0, 0%, 100%);
+                text-align: center;
+                padding: 40px 30px;
+            }
+            h1 {
+                padding-bottom: 15px;
+                color: hsl(223, 47%, 23%);
+            }
+            p {
+                font-size: 16px;
+                /* filter: brightness(80%); */
+                color: hsl(224, 23%, 55%);
+                line-height: 1.7em;
+            }
+            .imagePlan {
+                display: flex;
+                background-color: hsl(225, 100%, 98%);
+                /* border: 3px red solid; */
+                border-radius: 10px;
+                overflow: hidden;
+                margin: 20px 0px;
+                padding: 10px 0px;
+                /* justify-content: center; */
+            }
+            .tndImage {
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+            }
+            .iconMusic {
+                padding: 0px;
+                margin: 0px 10px;
+            }
+            .annualyear {
+                margin-top: 10px;
+                margin-right: -20px;
+                display: flex;
+                flex-direction: column;
+            }
+            .annual {
+                color: hsl(225, 19%, 25%);
+                font-weight: bold;
+                font-size: 14px;
+            }
+            .year {
+                color: rgba(0, 0, 0, 0.5);
+            }
+            .change {
+                /* border: 4px red solid; */
+                padding-top: 2px;
+                padding-right: 10px;
+            }
+            .change a:hover {
+                text-decoration: none;
+                color: hsl(223, 76%, 68%);
+            }
+            .payment {
+                font-size: 15px;
+                font-weight: bold;
+                margin: 30px 0px;
+            }
+            .payment a {
+                display: block;
+                width: 280px;
+                height: 30px;
+                border-radius: 10px;
+                background-color: hsl(245, 75%, 52%);
+                /* text-align: center; */
+                padding-top: 13px;
+                box-shadow: 0px 20px 20px rgba(4, 0, 255, 0.2);
+                color: hsl(0, 0%, 100%);
+                text-decoration: none;
+            }
+            .payment a:hover {
+                background-color: hsl(240, 73%, 71%);
+            }
+            .cancel a {
+                color: rgba(0, 0, 0, 0.4);
+                font-weight: bold;
+                text-decoration: none;
+            }
+            .cancel a:hover {
+                text-decoration: none;
+                color: hsl(0, 0%, 0%);
+            }
+        }
